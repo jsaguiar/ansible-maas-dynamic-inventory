@@ -1,4 +1,5 @@
 import unittest
+
 from unittest.mock import MagicMock
 from maas_tags import Fetcher as FetcherByTags
 from maas_tags import InventoryBuilder as InventoryBuilderByTags

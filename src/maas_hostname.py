@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 import click
 import sys
 import os
@@ -80,6 +78,7 @@ class Fetcher:
     def _api_call(self, url: str) -> dict:
         headers = self.authenticator.create_headers()
         request = requests.get(url, headers=headers)
+        print(request)
         response = json.loads(request.text)
 
         return response
